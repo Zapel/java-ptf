@@ -36,7 +36,7 @@ public class  GroupData {
         return name;
     }
 
-    public String getHeader() {
+    public String getHeader(String s) {
         return header;
     }
 
