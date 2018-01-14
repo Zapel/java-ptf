@@ -1,0 +1,8 @@
+5915 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Start test testBadGroupCreationwith parameter []
+9827 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Stop test testBadGroupCreationwith parameter []
+9847 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Start test testGroupCreationwith parameter [GroupData{id='2147483647', name='test 0'}]
+12443 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Stop test testGroupCreationwith parameter [GroupData{id='100', name='test 0'}]
+12443 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Start test testGroupCreationwith parameter [GroupData{id='2147483647', name='test 1'}]
+15198 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Stop test testGroupCreationwith parameter [GroupData{id='101', name='test 1'}]
+15198 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Start test testGroupCreationwith parameter [GroupData{id='2147483647', name='test 2'}]
+17881 [main] INFO  n.u.ptf.addressbook.tests.TestBase - Stop test testGroupCreationwith parameter [GroupData{id='102', name='test 2'}]

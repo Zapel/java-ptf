@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.ukr.ptf.addressbook.tests.GroupCreationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-01-14T15:41:53" hostname="zapel-PC" time="6.151">
+<testsuite name="net.ukr.ptf.addressbook.tests.GroupCreationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-01-14T16:58:00" hostname="zapel-PC" time="8.397">
   <properties/>
-  <testcase name="testBadGroupCreation" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="1.592"/>
-  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="1.564"/>
-  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="1.458"/>
-  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="1.468"/>
+  <testcase name="testBadGroupCreation" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="2.439"/>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="1.922"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="2.017"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="net.ukr.ptf.addressbook.tests.GroupCreationTests" time="1.997"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

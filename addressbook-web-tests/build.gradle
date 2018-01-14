@@ -16,11 +16,18 @@ dependencies {
     compile 'org.gosu-lang.gosu.managed:gw-jcommander:1.48'
     compile 'com.thoughtworks.xstream:xstream:1.4.8'
     compile 'com.solidfire.code.gson:gson:2.6.2'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
 }
 
 task testGroups(type: Test) {
     useTestNG {
         suites 'src/test/resources/testng-groups.xml'
+    }
+    if(projects.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if(projects.hasProperty('target')) {
+        systemProperty 'target', "${target}"
     }
 }
 
