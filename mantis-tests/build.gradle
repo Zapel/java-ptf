@@ -1,4 +1,4 @@
-group 'net.ukr.zapel'
+group 'mantis.ukr.zapel'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
