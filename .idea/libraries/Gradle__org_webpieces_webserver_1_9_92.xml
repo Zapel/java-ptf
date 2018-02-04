@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.webpieces:webserver:1.9.92">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webpieces/webserver/1.9.92/765154e123589667fe75070cd8d209a7b705424a/webserver-1.9.92.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webpieces/webserver/1.9.92/765154e123589667fe75070cd8d209a7b705424a/webserver-1.9.92-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,4 +1,4 @@
-package net.ukr.ptf.mantis.ukr.zapel.sandbox;
+package net.ukr.ptf.sandbox;
 
 public class Collections {
     public static void main(String args[]) {

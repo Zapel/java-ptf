@@ -1,4 +1,4 @@
-group 'mantis.ukr.zapel'
+group 'mantis.ukr'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -19,4 +19,7 @@ repositories {
 
 dependencies {
     compile 'org.testng:testng:6.13.1'
+    compile 'com.google.cloud.trace:servlet:0.6.0'
+    compile 'org.webpieces:webserver:1.9.92'
+    compile 'org.mortbay.jetty:servlet-annotation-spec:3.0.pre0'
 }

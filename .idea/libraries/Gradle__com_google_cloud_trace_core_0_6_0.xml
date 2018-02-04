@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.cloud.trace:core:0.6.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.trace/core/0.6.0/1b8c45f98f91e2b34d3db0837e25b6165f3f577a/core-0.6.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud.trace/core/0.6.0/b4fa9db14cd357cad6ab58d0e4a720d82ee34a0e/core-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
