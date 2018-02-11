@@ -3,34 +3,57 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="202.0">net.ukr.ptf.addressbook.tests.GroupDeletionTests</node>
-    <node x="170.0" y="202.0">net.ukr.ptf.addressbook.tests.GroupCreationTests</node>
-    <node x="61.5" y="101.0">net.ukr.ptf.addressbook.tests.TestBase</node>
-    <node x="81.0" y="0.0">net.ukr.ptf.addressbook.appmanager.ApplicationManager</node>
+    <node x="267.0" y="379.0">net.ukr.ptf.addressbook.tests.GroupDeletionTests</node>
+    <node x="356.0" y="0.0">net.ukr.ptf.addressbook.appmanager.GroupHelper</node>
+    <node x="178.0" y="0.0">net.ukr.ptf.addressbook.appmanager.SessionHelper</node>
+    <node x="97.0" y="379.0">net.ukr.ptf.addressbook.tests.GroupCreationTests</node>
+    <node x="158.5" y="278.0">net.ukr.ptf.addressbook.tests.TestBase</node>
+    <node x="131.5" y="111.0">net.ukr.ptf.addressbook.appmanager.ApplicationManager</node>
+    <node x="0.0" y="0.0">net.ukr.ptf.addressbook.appmanager.NavigationHelper</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="net.ukr.ptf.addressbook.appmanager.ApplicationManager" target="net.ukr.ptf.addressbook.appmanager.SessionHelper">
+      <point x="-15.6875" y="-58.5" />
+      <point x="241.3125" y="91.0" />
+      <point x="217.5" y="91.0" />
+      <point x="-39.5" y="25.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.appmanager.ApplicationManager" target="net.ukr.ptf.addressbook.appmanager.GroupHelper">
+      <point x="78.4375" y="-58.5" />
+      <point x="335.4375" y="81.0" />
+      <point x="435.0" y="81.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
     <edge source="net.ukr.ptf.addressbook.tests.GroupCreationTests" target="net.ukr.ptf.addressbook.tests.TestBase">
-      <point x="37.5" y="-14.5" />
-      <point x="282.5" y="177.0" />
-      <point x="233.875" y="177.0" />
-      <point x="73.875" y="25.5" />
+      <point x="-37.5" y="-14.5" />
+      <point x="134.5" y="354.0" />
+      <point x="183.125" y="354.0" />
+      <point x="-73.875" y="25.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.appmanager.ApplicationManager" target="net.ukr.ptf.addressbook.appmanager.NavigationHelper">
+      <point x="-47.0625" y="-58.5" />
+      <point x="209.9375" y="71.0" />
+      <point x="131.66666666666666" y="71.0" />
+      <point x="52.66666666666666" y="25.5" />
     </edge>
     <edge source="net.ukr.ptf.addressbook.tests.TestBase" target="net.ukr.ptf.addressbook.appmanager.ApplicationManager">
-      <point x="-49.25" y="-25.5" />
-      <point x="110.75" y="76.0" />
-      <point x="120.5" y="76.0" />
-      <point x="-39.5" y="25.5" />
+      <point x="49.25" y="-25.5" />
+      <point x="306.25" y="253.0" />
+      <point x="319.75" y="253.0" />
+      <point x="62.75" y="58.5" />
     </edge>
     <edge source="net.ukr.ptf.addressbook.tests.GroupDeletionTests" target="net.ukr.ptf.addressbook.tests.TestBase">
       <point x="-37.5" y="-14.5" />
-      <point x="37.5" y="177.0" />
-      <point x="86.125" y="177.0" />
-      <point x="-73.875" y="25.5" />
+      <point x="304.5" y="354.0" />
+      <point x="281.625" y="354.0" />
+      <point x="24.625" y="25.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="206.0" y="259.5" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="206.0" y="260.0" />
+  <SelectedNodes>
+    <node>net.ukr.ptf.addressbook.tests.GroupCreationTests</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
   </Categories>
