@@ -1,4 +1,4 @@
-package net.ukr.ptf.addressbook;
+package net.ukr.ptf.addressbook.model;
 
 public class GroupData {
     private final String name;

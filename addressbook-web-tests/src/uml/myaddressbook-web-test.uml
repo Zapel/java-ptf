@@ -3,24 +3,36 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="66.5" y="0.0">net.ukr.ptf.addressbook.GroupData</node>
-    <node x="0.0" y="145.0">net.ukr.ptf.addressbook.GroupCreationTest</node>
+    <node x="0.0" y="202.0">net.ukr.ptf.addressbook.tests.GroupDeletionTests</node>
+    <node x="170.0" y="202.0">net.ukr.ptf.addressbook.tests.GroupCreationTests</node>
+    <node x="61.5" y="101.0">net.ukr.ptf.addressbook.tests.TestBase</node>
+    <node x="81.0" y="0.0">net.ukr.ptf.addressbook.appmanager.ApplicationManager</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="net.ukr.ptf.addressbook.GroupCreationTest" target="net.ukr.ptf.addressbook.GroupData">
-      <point x="64.0" y="-124.5" />
-      <point x="192.0" y="120.0" />
-      <point x="158.75" y="120.0" />
-      <point x="30.75" y="47.5" />
+    <edge source="net.ukr.ptf.addressbook.tests.GroupCreationTests" target="net.ukr.ptf.addressbook.tests.TestBase">
+      <point x="37.5" y="-14.5" />
+      <point x="282.5" y="177.0" />
+      <point x="233.875" y="177.0" />
+      <point x="73.875" y="25.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.tests.TestBase" target="net.ukr.ptf.addressbook.appmanager.ApplicationManager">
+      <point x="-49.25" y="-25.5" />
+      <point x="110.75" y="76.0" />
+      <point x="120.5" y="76.0" />
+      <point x="-39.5" y="25.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.tests.GroupDeletionTests" target="net.ukr.ptf.addressbook.tests.TestBase">
+      <point x="-37.5" y="-14.5" />
+      <point x="37.5" y="177.0" />
+      <point x="86.125" y="177.0" />
+      <point x="-73.875" y="25.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="72.5" y="87.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="206.0" y="259.5" />
   <SelectedNodes />
   <Categories>
-    <Category>Properties</Category>
-    <Category>Inner Classes</Category>
-    <Category>Methods</Category>
+    <Category>Fields</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
