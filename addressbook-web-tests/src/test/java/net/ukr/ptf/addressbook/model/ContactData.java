@@ -1,4 +1,4 @@
-package net.ukr.ptf.addressbook.tests;
+package net.ukr.ptf.addressbook.model;
 
 public class ContactData {
     private final String firstName;

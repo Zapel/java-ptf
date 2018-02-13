@@ -6,8 +6,8 @@ public class ContactDeletionTests extends TestBaseContact {
     
     @Test
     public void testContactDeletion() {
-        gotoHomePage();
-        editContact();
-        deleteEditContact();
+        appCont.gotoHomePage();
+        appCont.editContact();
+        appCont.deleteEditContact();
     }
 }
