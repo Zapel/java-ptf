@@ -2,12 +2,12 @@ package net.ukr.ptf.addressbook.tests;
 
 import org.testng.annotations.Test;
 
-public class ContactDeletionTests extends TestBaseContact {
+public class ContactDeletionTests extends TestBase {
     
     @Test
     public void testContactDeletion() {
-        appCont.getNavigationHelperContact().gotoHomePage();
-        appCont.getContactHelper().editContact();
-        appCont.getContactHelper().deleteEditContact();
+        app.getNavigationHelper().gotoHomePage();
+        app.getContactHelper().editContact();
+        app.getContactHelper().deleteEditContact();
     }
 }

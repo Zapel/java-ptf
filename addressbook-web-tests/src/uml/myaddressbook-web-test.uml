@@ -3,50 +3,72 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="298.0" y="246.0">net.ukr.ptf.addressbook.appmanager.SessionHelperContact</node>
-    <node x="0.0" y="246.0">net.ukr.ptf.addressbook.appmanager.NavigationHelperContact</node>
-    <node x="471.0" y="671.0">net.ukr.ptf.addressbook.appmanager.SessionHelper</node>
-    <node x="305.5" y="0.0">net.ukr.ptf.addressbook.appmanager.HelperBaseContact</node>
-    <node x="82.0" y="671.0">net.ukr.ptf.addressbook.tests.TestBaseContact</node>
-    <node x="0.0" y="420.0">net.ukr.ptf.addressbook.appmanager.ApplicationManagerContact</node>
-    <node x="579.0" y="191.0">net.ukr.ptf.addressbook.appmanager.ContactHelper</node>
-    <node x="0.0" y="817.0">net.ukr.ptf.addressbook.tests.ContactCreationTests</node>
-    <node x="223.0" y="817.0">net.ukr.ptf.addressbook.tests.ContactDeletionTests</node>
+    <node x="0.0" y="905.0">net.ukr.ptf.addressbook.tests.GroupDeletionTests</node>
+    <node x="762.0" y="191.0">net.ukr.ptf.addressbook.appmanager.GroupHelper</node>
+    <node x="521.0" y="268.0">net.ukr.ptf.addressbook.appmanager.SessionHelper</node>
+    <node x="662.0" y="905.0">net.ukr.ptf.addressbook.tests.GroupCreationTests</node>
+    <node x="330.5" y="759.0">net.ukr.ptf.addressbook.tests.TestBase</node>
+    <node x="0.0" y="464.0">net.ukr.ptf.addressbook.appmanager.ApplicationManager</node>
+    <node x="258.0" y="213.0">net.ukr.ptf.addressbook.appmanager.ContactHelper</node>
+    <node x="216.0" y="905.0">net.ukr.ptf.addressbook.tests.ContactCreationTests</node>
+    <node x="439.0" y="905.0">net.ukr.ptf.addressbook.tests.ContactDeletionTests</node>
+    <node x="0.0" y="257.0">net.ukr.ptf.addressbook.appmanager.NavigationHelper</node>
+    <node x="402.5" y="0.0">net.ukr.ptf.addressbook.appmanager.HelperBase</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="net.ukr.ptf.addressbook.appmanager.ContactHelper" target="net.ukr.ptf.addressbook.appmanager.HelperBaseContact">
+    <edge source="net.ukr.ptf.addressbook.tests.GroupCreationTests" target="net.ukr.ptf.addressbook.tests.TestBase">
+      <point x="0.0" y="-25.5" />
+      <point x="760.0" y="875.0" />
+      <point x="502.875" y="875.0" />
+      <point x="73.875" y="48.0" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.appmanager.GroupHelper" target="net.ukr.ptf.addressbook.appmanager.HelperBase">
+      <point x="0.0" y="-114.0" />
+      <point x="879.0" y="161.0" />
+      <point x="582.7499999999999" y="161.0" />
+      <point x="77.24999999999994" y="70.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.appmanager.NavigationHelper" target="net.ukr.ptf.addressbook.appmanager.HelperBase">
+      <point x="0.0" y="-48.0" />
+      <point x="119.0" y="161.0" />
+      <point x="428.25" y="161.0" />
+      <point x="-77.25" y="70.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.appmanager.SessionHelper" target="net.ukr.ptf.addressbook.appmanager.HelperBase">
+      <point x="0.0" y="-37.0" />
+      <point x="631.5" y="171.0" />
+      <point x="531.25" y="171.0" />
+      <point x="25.75" y="70.5" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.tests.GroupDeletionTests" target="net.ukr.ptf.addressbook.tests.TestBase">
+      <point x="0.0" y="-25.5" />
+      <point x="98.0" y="875.0" />
+      <point x="355.125" y="875.0" />
+      <point x="-73.875" y="48.0" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.tests.ContactDeletionTests" target="net.ukr.ptf.addressbook.tests.TestBase">
+      <point x="0.0" y="-25.5" />
+      <point x="540.5" y="885.0" />
+      <point x="453.625" y="885.0" />
+      <point x="24.625" y="48.0" />
+    </edge>
+    <edge source="net.ukr.ptf.addressbook.appmanager.ContactHelper" target="net.ukr.ptf.addressbook.appmanager.HelperBase">
       <point x="0.0" y="-92.0" />
-      <point x="700.5" y="166.0" />
-      <point x="510.5" y="166.0" />
-      <point x="82.0" y="70.5" />
+      <point x="379.5" y="171.0" />
+      <point x="479.75" y="171.0" />
+      <point x="-25.75" y="70.5" />
     </edge>
-    <edge source="net.ukr.ptf.addressbook.tests.ContactCreationTests" target="net.ukr.ptf.addressbook.tests.TestBaseContact">
+    <edge source="net.ukr.ptf.addressbook.tests.ContactCreationTests" target="net.ukr.ptf.addressbook.tests.TestBase">
       <point x="0.0" y="-25.5" />
-      <point x="101.5" y="792.0" />
-      <point x="147.5" y="792.0" />
-      <point x="-65.5" y="48.0" />
-    </edge>
-    <edge source="net.ukr.ptf.addressbook.appmanager.NavigationHelperContact" target="net.ukr.ptf.addressbook.appmanager.HelperBaseContact">
-      <point x="0.0" y="-37.0" />
-      <point x="139.0" y="166.0" />
-      <point x="346.5" y="166.0" />
-      <point x="-82.0" y="70.5" />
-    </edge>
-    <edge source="net.ukr.ptf.addressbook.appmanager.SessionHelperContact" target="net.ukr.ptf.addressbook.appmanager.HelperBaseContact">
-      <point x="0.0" y="-37.0" />
-      <point x="0.0" y="70.5" />
-    </edge>
-    <edge source="net.ukr.ptf.addressbook.tests.ContactDeletionTests" target="net.ukr.ptf.addressbook.tests.TestBaseContact">
-      <point x="0.0" y="-25.5" />
-      <point x="324.5" y="792.0" />
-      <point x="278.5" y="792.0" />
-      <point x="65.5" y="48.0" />
+      <point x="317.5" y="885.0" />
+      <point x="404.375" y="885.0" />
+      <point x="-24.625" y="48.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="364.0" y="380.0" />
+  <settings layout="Hierarchic Group" zoom="0.9498910675381264" x="411.5" y="587.0" />
   <SelectedNodes>
-    <node>net.ukr.ptf.addressbook.tests.TestBaseContact</node>
+    <node>net.ukr.ptf.addressbook.appmanager.ApplicationManager</node>
   </SelectedNodes>
   <Categories>
     <Category>Fields</Category>

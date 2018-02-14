@@ -4,7 +4,7 @@ import net.ukr.ptf.addressbook.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ContactHelper extends HelperBaseContact {
+public class ContactHelper extends HelperBase {
 
     public ContactHelper(ChromeDriver wd) {
         super(wd);
