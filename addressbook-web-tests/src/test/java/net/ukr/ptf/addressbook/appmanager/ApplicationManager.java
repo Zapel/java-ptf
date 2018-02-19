@@ -18,7 +18,6 @@ public class ApplicationManager {
     private String browser;
 
     public ApplicationManager(String browser) {
-
         this.browser = browser;
     }
 
