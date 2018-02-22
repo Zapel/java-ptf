@@ -2,18 +2,23 @@ package net.ukr.ptf.addressbook.tests;
 
 import net.ukr.ptf.addressbook.model.ContactData;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
 public class ContactDeletionTests extends TestBase {
-
-    @Test(enabled = false)
-    public void testContactDeletion() {
+    @BeforeMethod
+    public void ensurePreconditions() {
         app.getNavigationHelper().gotoHomePage();
         if(! app.getContactHelper().isThereAContact()) {
-            app.getContactHelper().createContact(new ContactData("Oleg", null, null, null, "test1"), true);
+            app.getContactHelper().createContact(
+                    new ContactData("Oleg", null, null, null, "test1"), true);
         }
+    }
+
+    @Test//(enabled = false)
+    public void testContactDeletion() {
         List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().initContactModification(before.size() - 1);
         app.getContactHelper().deleteEditContact();
