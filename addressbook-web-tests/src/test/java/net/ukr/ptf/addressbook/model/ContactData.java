@@ -13,7 +13,10 @@ public class ContactData {
     public ContactData withId(int id) {
         this.id = id;
         return this;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1b897fa3bbb684b87094c25051e34bb28fb06dcf
     }
 
     public ContactData withFirstName(String firstName) {
@@ -85,6 +88,10 @@ public class ContactData {
 
     @Override
     public int hashCode() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1b897fa3bbb684b87094c25051e34bb28fb06dcf
         return Objects.hash(firstName, lastName);
     }
 }
