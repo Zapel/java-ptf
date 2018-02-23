@@ -13,7 +13,7 @@ public class ContactDeletionTests extends TestBase {
         app.goTo().homePage();
         if(app.contact().list().size() == 0) {
             app.contact().create(
-                    new ContactData("Oleg", null, null, null, "test1"), true);
+                    new ContactData().withFirstName("Oleg").withGroup("test1"), true);
         }
     }
 
@@ -28,7 +28,5 @@ public class ContactDeletionTests extends TestBase {
         before.remove(index);
         Assert.assertEquals(before, after);
     }
-
-
 }
 
