@@ -87,7 +87,7 @@ public class ContactHelper extends HelperBase {
         return isElementPresent(By.cssSelector("img[alt='Edit']"));
     }
 
-    public int getContactCount() {
+    public int count() {
         return wd.findElements(By.name("selected[]")).size();
     }
 
