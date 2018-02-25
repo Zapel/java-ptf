@@ -30,7 +30,7 @@ public class ContactHelper extends HelperBase {
     public void fillContactForm(ContactData contactData, boolean creation) {
         type(By.name("firstname"), contactData.getFirstName());
         type(By.name("lastname"), contactData.getLastName());
-        type(By.name("home"), contactData.getHome());
+        type(By.name("home"), contactData.getHomePhone());
         type(By.name("email"), contactData.getEmail());
 
         if(creation) {
@@ -107,5 +107,17 @@ public class ContactHelper extends HelperBase {
             contactCache.add(new ContactData().withId(id).withFirstName(firstName).withLastName(lastName));
         }
         return new Contacts(contactCache);
+    }
+
+    public ContactData infoFromEditForm(ContactData contact) {
+        initContactModificationById(contact.getId());
+        String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
+        String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
+        String home = wd.findElement(By.name("home")).getAttribute("value");
+        String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
+        String work = wd.findElement(By.name("work")).getAttribute("value");
+        wd.navigate().back();
+        return new ContactData().withId(contact.getId()).withFirstName(firstname).withLastName(lastname)
+                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work);
     }
 }
