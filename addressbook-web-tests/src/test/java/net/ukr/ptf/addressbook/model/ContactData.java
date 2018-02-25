@@ -13,10 +13,6 @@ public class ContactData {
     public ContactData withId(int id) {
         this.id = id;
         return this;
-<<<<<<< HEAD
-
-=======
->>>>>>> 1b897fa3bbb684b87094c25051e34bb28fb06dcf
     }
 
     public ContactData withFirstName(String firstName) {
@@ -82,16 +78,13 @@ public class ContactData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return Objects.equals(firstName, that.firstName) &&
+        return id == that.id &&
+                Objects.equals(firstName, that.firstName) &&
                 Objects.equals(lastName, that.lastName);
     }
 
     @Override
     public int hashCode() {
-<<<<<<< HEAD
-=======
-
->>>>>>> 1b897fa3bbb684b87094c25051e34bb28fb06dcf
-        return Objects.hash(firstName, lastName);
+        return Objects.hash(id, firstName, lastName);
     }
 }
