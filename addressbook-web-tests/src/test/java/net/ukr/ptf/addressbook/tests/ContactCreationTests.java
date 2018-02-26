@@ -22,12 +22,12 @@ public class ContactCreationTests extends TestBase {
                 before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
     }
 
-    @Test//(enabled = false)
+    @Test(enabled = false)
     public void testBadContactCreation() {
         app.goTo().homePage();
         Contacts before = app.contact().all();
         ContactData contact = new ContactData()
-                .withFirstName("Fisher'").withLastName("Lazeba").withHomePhone("063-798-8633").withGroup("test1");
+                .withFirstName("Fisher'").withLastName("Lazeba").withHomePhone("000").withMobilePhone("111").withWorkPhone("222").withGroup("test1");
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.contact().all();
