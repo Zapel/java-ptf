@@ -1,5 +1,6 @@
 package net.ukr.ptf.addressbook.model;
 
+import java.io.File;
 import java.util.Objects;
 
 public class ContactData {
@@ -12,6 +13,7 @@ public class ContactData {
     private String allPhones;
     private String email;
     private String group;
+    private File photo;
 
     public ContactData withId(int id) {
         this.id = id;
@@ -58,6 +60,11 @@ public class ContactData {
         return this;
     }
 
+    public ContactData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
+    }
+
     public int getId() {
         return id;
     }
@@ -92,6 +99,10 @@ public class ContactData {
 
     public String getGroup() {
         return group;
+    }
+
+    public File getPhoto() {
+        return photo;
     }
 
     @Override
