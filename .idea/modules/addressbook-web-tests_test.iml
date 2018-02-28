@@ -14,9 +14,9 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output-test url="file://$MODULE_DIR$/../../addressbook-web-tests/out/test/classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../addressbook-web-tests/src/test">
-      <sourceFolder url="file://$MODULE_DIR$/../../addressbook-web-tests/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../addressbook-web-tests/src/test/resources" type="java-test-resource" />
+    <content url="file://$MODULE_DIR$/../../addressbook-web-tests/src/tests">
+      <sourceFolder url="file://$MODULE_DIR$/../../addressbook-web-tests/src/tests/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../addressbook-web-tests/src/tests/resources" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
