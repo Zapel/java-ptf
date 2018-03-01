@@ -9,6 +9,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class  GroupCreationTests extends TestBase {
 
+    //@DataProvider
+    //public Iterator<Object[]> validGroups() {
+        //List<Object[]> list = new ArrayList<Object[]>();
+
+        //return list.iterator();
+    //}
+
     @Test
     public void testGroupCreation() {
         app.goTo().groupPage();
