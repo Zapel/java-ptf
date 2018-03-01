@@ -2,12 +2,32 @@ package net.ukr.ptf.addressbook.tests;
 
 import net.ukr.ptf.addressbook.model.GroupData;
 import net.ukr.ptf.addressbook.model.Groups;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class  GroupCreationTests extends TestBase {
+
+
+    //@DataProvider
+    //public Iterator<Object[]> validGroups() {
+        //List<Object[]> list = new ArrayList<Object[]>();
+
+        //return list.iterator();
+    //}
+
+    @DataProvider
+    public Iterator<Object[]> validGroups() {
+        List<Object[]> list = new ArrayList<Object[]>();
+
+        return list.iterator();
+    }
 
     @Test
     public void testGroupCreation() {

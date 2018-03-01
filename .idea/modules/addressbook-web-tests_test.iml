@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="addressbook-web-tests:test" external.linked.project.path="$MODULE_DIR$/../../addressbook-web-tests" external.root.project.path="$MODULE_DIR$/../../addressbook-web-tests" external.system.id="GRADLE" external.system.module.group="mantis.ukr.zapel" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="FacetManager">
-    <facet type="hibernate" name="Hibernate">
-      <configuration>
-        <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" value="b765725f-ab90-4a5d-b3a9-e2f32d071621" />
-        </datasource-map>
-        <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/../../addressbook-web-tests/src/test/resources/hibernate.cfg.xml" />
-      </configuration>
-    </facet>
-  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output-test url="file://$MODULE_DIR$/../../addressbook-web-tests/out/test/classes" />
     <exclude-output />
@@ -24,6 +13,7 @@
     <orderEntry type="library" name="Gradle: org.testng:testng:6.9.10" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-java:2.52.0" level="project" />
     <orderEntry type="library" name="Gradle: org.hamcrest:java-hamcrest:2.0.0.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.gosu-lang.gosu.managed:gw-jcommander:1.48" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:jcommander:1.48" level="project" />
     <orderEntry type="library" name="Gradle: org.beanshell:bsh:2.0b4" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:2.52.0" level="project" />
