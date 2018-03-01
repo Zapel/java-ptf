@@ -50,9 +50,15 @@ public class GroupDataGenerator {
     private List<GroupData> generateGroups(int count) {
         List<GroupData> groups = new ArrayList<GroupData>();
         for(int i = 0; i < count; i ++) {
+<<<<<<< HEAD
             groups.add(new GroupData().withName(String.format("test%s", i))
                     .withHeader(String.format("header%s", i))
                     .withFooter(String.format("footer%s", i)));
+=======
+            groups.add(new GroupData().withName(String.format("test %s", i))
+                    .withHeader(String.format("header %s", i))
+                    .withFooter(String.format("footer %s", i)));
+>>>>>>> 44f7e2e826fed39ca170eac5c8486d3529181e2f
         }
         return groups;
     }
