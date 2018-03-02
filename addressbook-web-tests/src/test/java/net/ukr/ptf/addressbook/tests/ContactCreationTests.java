@@ -41,7 +41,7 @@ public class ContactCreationTests extends TestBase {
 
     @Test(enabled = false)
     public void testCurrentDir() {
-         File currentDir = new File(".");
+        File currentDir = new File(".");
         System.out.println(currentDir.getAbsolutePath());
         File photo = new File("src/test/resources/28082011(001).jpg");
         System.out.println(photo.getAbsolutePath());
