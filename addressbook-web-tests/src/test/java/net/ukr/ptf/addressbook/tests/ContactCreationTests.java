@@ -5,7 +5,7 @@ import net.ukr.ptf.addressbook.model.Contacts;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -16,21 +16,17 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class ContactCreationTests extends TestBase {
 
     @DataProvider
-    public Iterator<Object[]> validContacts() {
+    public Iterator<Object[]> validContacts() throws IOException {
         File photo = new File("src/test/resources/28082011(001).jpg");
         List<Object[]> list = new ArrayList<Object[]>();
-        list.add(new Object[] {new ContactData()
-                .withFirstName("Oleg").withLastName("Lazeba")
-                .withHomePhone("044-468-9265").withMobilePhone("063-798-8633")
-                .withEmail("zapel176@ukr.net").withGroup("test1").withPhoto(photo)});
-        list.add(new Object[] {new ContactData()
-                .withFirstName("Oleg").withLastName("Lazeba")
-                .withHomePhone("044-468-9265").withMobilePhone("063-798-8633")
-                .withEmail("zapel176@ukr.net").withGroup("test1").withPhoto(photo)});
-        list.add(new Object[] {new ContactData()
-                .withFirstName("Oleg").withLastName("Lazeba")
-                .withHomePhone("044-468-9265").withMobilePhone("063-798-8633")
-                .withEmail("zapel176@ukr.net").withGroup("test1").withPhoto(photo)});
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.csv")));
+        String line = reader.readLine();
+        while (line != null) {
+            String[] split = line.split(";");
+            list.add(new Object[]{new ContactData().withFirstName(split[0]).withLastName(split[1])
+                    .withMobilePhone(split[2]).withEmail(split[3]).withGroup("test1").withPhoto(photo)});
+            line = reader.readLine();
+        }
         return  list.iterator();
     }
 
