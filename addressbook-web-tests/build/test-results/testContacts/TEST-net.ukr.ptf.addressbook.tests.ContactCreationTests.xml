@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.ukr.ptf.addressbook.tests.ContactCreationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-03-04T03:55:52" hostname="zapel-PC" time="25.316">
+  <properties/>
+  <testcase name="testContactCreation[0](ContactData{id='2147483647', firstName='FirstName0', lastName='LastName0'})" classname="net.ukr.ptf.addressbook.tests.ContactCreationTests" time="15.314"/>
+  <testcase name="testContactCreation[1](ContactData{id='2147483647', firstName='FirstName1', lastName='LastName1'})" classname="net.ukr.ptf.addressbook.tests.ContactCreationTests" time="4.926"/>
+  <testcase name="testContactCreation[2](ContactData{id='2147483647', firstName='FirstName2', lastName='LastName2'})" classname="net.ukr.ptf.addressbook.tests.ContactCreationTests" time="5.075"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

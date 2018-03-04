@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="net.ukr.ptf.addressbook.tests.ContactModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-04T03:56:18" hostname="zapel-PC" time="15.141">
+  <properties/>
+  <testcase name="testContactModification" classname="net.ukr.ptf.addressbook.tests.ContactModificationTests" time="15.141"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
