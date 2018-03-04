@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="net.ukr.ptf.addressbook.tests.ContactDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-03-04T03:56:33" hostname="zapel-PC" time="3.863">
+<testsuite name="net.ukr.ptf.addressbook.tests.ContactDeletionTests" tests="1" skipped="1" failures="0" errors="0" timestamp="2018-03-04T04:49:33" hostname="zapel-PC" time="0.0">
   <properties/>
-  <testcase name="testContactDeletion" classname="net.ukr.ptf.addressbook.tests.ContactDeletionTests" time="3.863"/>
+  <testcase name="testContactDeletion" classname="net.ukr.ptf.addressbook.tests.ContactDeletionTests" time="0.0">
+    <skipped/>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
