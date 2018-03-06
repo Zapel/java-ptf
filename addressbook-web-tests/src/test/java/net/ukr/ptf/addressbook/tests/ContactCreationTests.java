@@ -72,23 +72,26 @@ public class ContactCreationTests extends TestBase {
     @Test(dataProvider = "validContactsFromJson")
     public void testContactCreation(ContactData contact) {
         app.goTo().homePage();
-        Contacts before = app.contact().all();
+        Contacts before = app.db().contacts();
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size() + 1));
-        Contacts after = app.contact().all();
+        Contacts after = app.db().contacts();
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
     }
 
-    @Test(enabled = false)
+    @Test
     public void testBadContactCreation() {
+        File photo = new File("src/test/resources/28082011(001).jpg");
         app.goTo().homePage();
-        Contacts before = app.contact().all();
+        Contacts before = app.db().contacts();
         ContactData contact = new ContactData()
-                .withFirstName("Fisher'").withLastName("Lazeba").withHomePhone("000").withMobilePhone("111").withWorkPhone("222").withGroup("test1");
+                .withFirstName("Fisher'").withLastName("Lazeba")
+                .withHomePhone("000").withMobilePhone("111").withWorkPhone("222")
+                .withGroup("test1").withPhoto(photo);
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size()));
-        Contacts after = app.contact().all();
+        Contacts after = app.db().contacts();
         assertThat(after, equalTo(before));
     }
 

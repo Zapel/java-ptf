@@ -1,25 +1,12 @@
 [
   {
     "id": 2147483647,
-    "firstName": "FirstName0",
-    "lastName": "LastName0",
-    "mobilePhone": "000",
-    "email": "Email0",
-    "group": "test1",
-    "photo": {
-      "path": "src\\test\\resources\\28082011(001).jpg"
-    }
-  },
-  {
-    "id": 2147483647,
     "firstName": "FirstName1",
     "lastName": "LastName1",
     "mobilePhone": "111",
     "email": "Email1",
     "group": "test1",
-    "photo": {
-      "path": "src\\test\\resources\\28082011(001).jpg"
-    }
+    "photo": "src\\test\\resources\\28082011(001).jpg"
   },
   {
     "id": 2147483647,
@@ -28,8 +15,15 @@
     "mobilePhone": "222",
     "email": "Email2",
     "group": "test1",
-    "photo": {
-      "path": "src\\test\\resources\\28082011(001).jpg"
-    }
+    "photo": "src\\test\\resources\\28082011(001).jpg"
+  },
+  {
+    "id": 2147483647,
+    "firstName": "FirstName3",
+    "lastName": "LastName3",
+    "mobilePhone": "333",
+    "email": "Email3",
+    "group": "test1",
+    "photo": "src\\test\\resources\\28082011(001).jpg"
   }
 ]

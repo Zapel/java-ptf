@@ -82,7 +82,7 @@ public class ContactDataGenerator {
         File photo = new File("src/test/resources/28082011(001).jpg");
         String group = "test1";
         List<ContactData> contacts = new ArrayList<ContactData>();
-        for(int i = 0; i < count; i ++) {
+        for(int i = 1; i < count; i ++) {
             contacts.add(new ContactData().withFirstName(String.format("FirstName%s", i))
                     .withLastName(String.format("LastName%s", i))
                     .withMobilePhone(String.format("%s%s%s", i, i, i))
