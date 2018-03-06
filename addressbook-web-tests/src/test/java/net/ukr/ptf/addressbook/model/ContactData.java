@@ -10,8 +10,6 @@ import java.io.File;
 import java.util.Objects;
 
 @XStreamAlias("contact")
-
-
 @Entity
 @Table(name = "addressbook")
 public class ContactData {
