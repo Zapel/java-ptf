@@ -4,7 +4,6 @@ import net.ukr.ptf.addressbook.model.ContactData;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.File;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -16,10 +15,14 @@ public class ContactPhoneTests extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         if(app.db().contacts().size() == 0) {
-            File photo = new File("src/test/resources/28082011(001).jpg");
             app.goTo().homePage();
             app.contact().create(
-                    new ContactData().withFirstName("Oleg").withMobilePhone("063-798-8633").withGroup("test1").withPhoto(photo), true);
+                    new ContactData()
+                            .withFirstName("Oleg").withLastName("Lazeba")
+                            .withHomePhone("111").withMobilePhone("063-798-8633").withWorkPhone("222")
+                            .withEmail("eMail").withEmail2("eMail2").withEmail3("eMail2")
+                            .withGroup("test1")
+                            .withPhoto(photo), true);
         }
     }
 

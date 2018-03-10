@@ -24,7 +24,6 @@ public class ContactCreationTests extends TestBase {
 
     @DataProvider
     public Iterator<Object[]> validContactsFromCsv() throws IOException {
-        File photo = new File("src/test/resources/28082011(001).jpg");
         List<Object[]> list = new ArrayList<Object[]>();
         try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.csv")))) {
             String line = reader.readLine();
@@ -78,28 +77,33 @@ public class ContactCreationTests extends TestBase {
         Contacts after = app.db().contacts();
         assertThat(after, equalTo(
                 before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
+        verifyContactListInUI();
     }
 
     @Test
     public void testBadContactCreation() {
-        File photo = new File("src/test/resources/28082011(001).jpg");
         app.goTo().homePage();
         Contacts before = app.db().contacts();
         ContactData contact = new ContactData()
-                .withFirstName("Fisher'").withLastName("Lazeba")
-                .withHomePhone("000").withMobilePhone("111").withWorkPhone("222")
-                .withGroup("test1").withPhoto(photo);
+                .withFirstName("Fisher'")
+                .withLastName("Lazeba")
+                .withHomePhone("000")
+                .withMobilePhone("111")
+                .withWorkPhone("222")
+                .withEmail("zapel176@ukr.net")
+                .withGroup("test1")
+                .withPhoto(photo);
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.db().contacts();
         assertThat(after, equalTo(before));
+        verifyContactListInUI();
     }
 
     @Test(enabled = false)
     public void testCurrentDir() {
         File currentDir = new File(".");
         System.out.println(currentDir.getAbsolutePath());
-        File photo = new File("src/test/resources/28082011(001).jpg");
         System.out.println(photo.getAbsolutePath());
         System.out.println(photo.exists());
     }

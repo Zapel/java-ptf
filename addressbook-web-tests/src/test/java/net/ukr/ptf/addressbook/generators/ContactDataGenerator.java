@@ -83,10 +83,12 @@ public class ContactDataGenerator {
         String group = "test1";
         List<ContactData> contacts = new ArrayList<ContactData>();
         for(int i = 1; i < count; i ++) {
-            contacts.add(new ContactData().withFirstName(String.format("FirstName%s", i))
-                    .withLastName(String.format("LastName%s", i))
-                    .withMobilePhone(String.format("%s%s%s", i, i, i))
-                    .withEmail(String.format("Email%s", i)).withGroup(group).withPhoto(photo));
+            contacts.add(new ContactData()
+                    .withFirstName(String.format("FirstName%s", i)).withLastName(String.format("LastName%s", i))
+                    .withHomePhone(String.format("homePhone%s", i, i, i)).withMobilePhone(String.format("mobilePhone%s", i, i, i)).withWorkPhone(String.format("workPhone%s", i, i, i))
+                    .withEmail("Email").withEmail2("Email2").withEmail3("Email3")
+                    .withGroup(group)
+                    .withPhoto(photo));
         }
         return contacts;
     }
