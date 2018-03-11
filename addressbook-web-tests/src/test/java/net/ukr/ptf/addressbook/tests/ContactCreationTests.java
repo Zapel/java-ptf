@@ -25,10 +25,7 @@ public class ContactCreationTests extends TestBase {
 
     @DataProvider
     public Iterator<Object[]> validContactsFromCsv() throws IOException {
-<<<<<<< HEAD
         Groups groups = app.db().groups();
-=======
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
         List<Object[]> list = new ArrayList<Object[]>();
         try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contacts.csv")))) {
             String line = reader.readLine();
@@ -103,13 +100,8 @@ public class ContactCreationTests extends TestBase {
                 .withMobilePhone("111")
                 .withWorkPhone("222")
                 .withEmail("zapel176@ukr.net")
-<<<<<<< HEAD
                 .withPhoto(photo)
                 .inGroup(groups.iterator().next());
-=======
-                .withGroup("test1")
-                .withPhoto(photo);
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
         app.contact().create(contact, true);
         assertThat(app.contact().count(), equalTo(before.size()));
         Contacts after = app.db().contacts();
