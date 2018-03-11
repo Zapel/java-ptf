@@ -60,6 +60,7 @@ public class ContactData {
     @Transient
     private String allEmails;
 
+<<<<<<< HEAD
     //@Expose
     //@Transient
     //private String group;
@@ -70,6 +71,11 @@ public class ContactData {
     private Set<GroupData> groups = new HashSet<GroupData>();
 
 
+=======
+    @Expose
+    @Transient
+    private String group;
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
 
     @Expose
     @Column(name = "photo")
@@ -118,6 +124,24 @@ public class ContactData {
 
     public ContactData withEmail2(String email2) {
         this.email2 = email2;
+<<<<<<< HEAD
+=======
+        return this;
+    }
+
+    public ContactData withEmail3(String email3) {
+        this.email3 = email3;
+        return this;
+    }
+
+    public ContactData withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
+        return this;
+    }
+
+    public ContactData withGroup(String group) {
+        this.group = group;
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
         return this;
     }
 
@@ -185,22 +209,30 @@ public class ContactData {
         return allEmails;
     }
 
+<<<<<<< HEAD
     //public String getGroup() {
         //return group;
     //}
 
     public Groups getGroups() {
         return new Groups(groups);
+=======
+    public String getGroup() {
+        return group;
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     }
 
     public File getPhoto() {
         return new File(photo);
     }
 
+<<<<<<< HEAD
     public ContactData inGroup(GroupData group) {
         groups.add(group);
         return this;
     }
+=======
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
 
     @Override
     public boolean equals(Object o) {

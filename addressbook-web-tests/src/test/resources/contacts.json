@@ -9,7 +9,11 @@
     "email": "Email",
     "email2": "Email2",
     "email3": "Email3",
+<<<<<<< HEAD
     "groups": [],
+=======
+    "group": "test1",
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     "photo": "src\\test\\resources\\28082011(001).jpg"
   },
   {
@@ -22,7 +26,11 @@
     "email": "Email",
     "email2": "Email2",
     "email3": "Email3",
+<<<<<<< HEAD
     "groups": [],
+=======
+    "group": "test1",
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     "photo": "src\\test\\resources\\28082011(001).jpg"
   },
   {
@@ -35,7 +43,11 @@
     "email": "Email",
     "email2": "Email2",
     "email3": "Email3",
+<<<<<<< HEAD
     "groups": [],
+=======
+    "group": "test1",
+>>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     "photo": "src\\test\\resources\\28082011(001).jpg"
   }
 ]
