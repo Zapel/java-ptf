@@ -80,13 +80,13 @@ public class ContactDataGenerator {
 
     private List<ContactData> generateContacts(int count) {
         File photo = new File("src/test/resources/28082011(001).jpg");
-        String group = "test1";
         List<ContactData> contacts = new ArrayList<ContactData>();
         for(int i = 1; i < count; i ++) {
-            contacts.add(new ContactData().withFirstName(String.format("FirstName%s", i))
-                    .withLastName(String.format("LastName%s", i))
-                    .withMobilePhone(String.format("%s%s%s", i, i, i))
-                    .withEmail(String.format("Email%s", i)).withGroup(group).withPhoto(photo));
+            contacts.add(new ContactData()
+                    .withFirstName(String.format("FirstName%s", i)).withLastName(String.format("LastName%s", i))
+                    .withHomePhone(String.format("homePhone%s", i)).withMobilePhone(String.format("mobilePhone%s", i)).withWorkPhone(String.format("workPhone%s", i))
+                    .withEmail(String.format("Email_1%s", i)).withEmail2(String.format("Email_2%s", i)).withEmail3(String.format("Email_3%s", i))
+                    .withPhoto(photo));
         }
         return contacts;
     }

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class ContactPhoneTests extends TestBase {
+public class ContactEmailTest extends TestBase{
 
     @BeforeMethod
     public void ensurePreconditions() {
@@ -19,8 +19,8 @@ public class ContactPhoneTests extends TestBase {
             app.goTo().homePage();
             Groups groups = app.db().groups();
             ContactData contact = new ContactData()
-                    .withFirstName("Fisher").withLastName("Lazeba")
-                    .withHomePhone("000")
+                    .withFirstName("Fisher")
+                    .withHomePhone("000").withMobilePhone("111")
                     .withEmail("zapel176@ukr.net")
                     .withPhoto(photo)
                     .inGroup(groups.iterator().next());
@@ -29,21 +29,22 @@ public class ContactPhoneTests extends TestBase {
     }
 
     @Test
-    public void testContactPhones() {
+    public void testContactEmails() {
         app.goTo().homePage();
         ContactData contact = app.contact().all().iterator().next();
         ContactData contactInfoFromEditForm = app.contact().infoFromEditForm(contact);
-        assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditForm)));
+        assertThat(contact.getAllEmails(), equalTo(mergeEmails(contactInfoFromEditForm)));
     }
 
-    private String mergePhones(ContactData contact) {
-        return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone())
+    private String mergeEmails(ContactData contact) {
+        return Arrays.asList(contact.getEmail(), contact.getEmail2(), contact.getEmail3())
                 .stream().filter((s) -> ! s.equals(""))
-                .map(ContactPhoneTests::cleaned)
+                .map(ContactEmailTest::cleaned)
                 .collect(Collectors.joining("\n"));
     }
 
     public static String cleaned(String phone) {
-        return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
+        return phone.replaceAll("\\s", "").replaceAll("[()]", "");
     }
+
 }
