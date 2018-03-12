@@ -17,7 +17,6 @@ public class ContactPhoneTests extends TestBase {
     public void ensurePreconditions() {
         if(app.db().contacts().size() == 0) {
             app.goTo().homePage();
-<<<<<<< HEAD
             Groups groups = app.db().groups();
             ContactData contact = new ContactData()
                     .withFirstName("Fisher").withLastName("Lazeba")
@@ -26,15 +25,6 @@ public class ContactPhoneTests extends TestBase {
                     .withPhoto(photo)
                     .inGroup(groups.iterator().next());
             app.contact().create(contact, true);
-=======
-            app.contact().create(
-                    new ContactData()
-                            .withFirstName("Oleg").withLastName("Lazeba")
-                            .withHomePhone("111").withMobilePhone("063-798-8633").withWorkPhone("222")
-                            .withEmail("eMail").withEmail2("eMail2").withEmail3("eMail2")
-                            .withGroup("test1")
-                            .withPhoto(photo), true);
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
         }
     }
 

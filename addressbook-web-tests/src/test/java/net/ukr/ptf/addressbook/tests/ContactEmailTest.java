@@ -1,10 +1,7 @@
 package net.ukr.ptf.addressbook.tests;
 
 import net.ukr.ptf.addressbook.model.ContactData;
-<<<<<<< HEAD
 import net.ukr.ptf.addressbook.model.Groups;
-=======
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,7 +17,6 @@ public class ContactEmailTest extends TestBase{
     public void ensurePreconditions() {
         if(app.db().contacts().size() == 0) {
             app.goTo().homePage();
-<<<<<<< HEAD
             Groups groups = app.db().groups();
             ContactData contact = new ContactData()
                     .withFirstName("Fisher")
@@ -29,15 +25,6 @@ public class ContactEmailTest extends TestBase{
                     .withPhoto(photo)
                     .inGroup(groups.iterator().next());
             app.contact().create(contact, true);
-=======
-            app.contact().create(
-                    new ContactData()
-                            .withFirstName("Oleg").withLastName("Lazeba")
-                            .withHomePhone("111").withMobilePhone("063-798-8633").withWorkPhone("222")
-                            .withEmail("eMail").withEmail2("222").withEmail3("333")
-                            .withGroup("test1")
-                            .withPhoto(photo), true);
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
         }
     }
 
@@ -59,5 +46,4 @@ public class ContactEmailTest extends TestBase{
     public static String cleaned(String phone) {
         return phone.replaceAll("\\s", "").replaceAll("[()]", "");
     }
-
 }

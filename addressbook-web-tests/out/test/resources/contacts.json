@@ -6,14 +6,10 @@
     "homePhone": "homePhone1",
     "mobilePhone": "mobilePhone1",
     "workPhone": "workPhone1",
-    "email": "Email",
-    "email2": "Email2",
-    "email3": "Email3",
-<<<<<<< HEAD
+    "email": "Email_11",
+    "email2": "Email_21",
+    "email3": "Email_31",
     "groups": [],
-=======
-    "group": "test1",
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     "photo": "src\\test\\resources\\28082011(001).jpg"
   },
   {
@@ -23,14 +19,10 @@
     "homePhone": "homePhone2",
     "mobilePhone": "mobilePhone2",
     "workPhone": "workPhone2",
-    "email": "Email",
-    "email2": "Email2",
-    "email3": "Email3",
-<<<<<<< HEAD
+    "email": "Email_12",
+    "email2": "Email_22",
+    "email3": "Email_32",
     "groups": [],
-=======
-    "group": "test1",
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     "photo": "src\\test\\resources\\28082011(001).jpg"
   },
   {
@@ -40,14 +32,10 @@
     "homePhone": "homePhone3",
     "mobilePhone": "mobilePhone3",
     "workPhone": "workPhone3",
-    "email": "Email",
-    "email2": "Email2",
-    "email3": "Email3",
-<<<<<<< HEAD
+    "email": "Email_13",
+    "email2": "Email_23",
+    "email3": "Email_33",
     "groups": [],
-=======
-    "group": "test1",
->>>>>>> 420ecead3365d716492f0e0b8ca7988230644928
     "photo": "src\\test\\resources\\28082011(001).jpg"
   }
 ]
