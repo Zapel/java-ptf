@@ -10,29 +10,25 @@ repositories {
 }
 
 dependencies {
-    compile 'org.testng:testng:6.11'
-    compile 'ch.qos.logback:logback-classic:1.2.3'
-    compile 'org.seleniumhq.selenium:selenium-java:3.5.3'
+    compile 'org.testng:testng:6.9.10'
+    compile 'org.seleniumhq.selenium:selenium-java:2.52.0'
     compile 'org.hamcrest:java-hamcrest:2.0.0.0'
-    compile 'commons-net:commons-net:3.6'
-    compile 'org.subethamail:subethasmtp:3.1.7'
-    compile 'ru.lanwen.verbalregex:java-verbal-expressions:1.4'
-    compile 'biz.futureware.mantis:mantis-axis-soap-client:1.2.19'
 }
 
 test {
-    useTestNG {
-        suites 'src/test/resources/testng-groups.xml'
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
     }
-    if(projects.hasProperty('browser')) {
+    if(project.hasProperty('browser')) {
         systemProperty 'browser', "${browser}"
     }
-    if(projects.hasProperty('target')) {
+    if(project.hasProperty('target')) {
         systemProperty 'target', "${target}"
     }
-    if(projects.hasProperty('verifyUI')) {
-        systemProperty 'verifyUI', "${verifyUI}"
+    if(project.hasProperty('verfyUI')) {
+        systemProperty 'verfyUI', "${verfyUI}"
     }
 }
+
 
 
