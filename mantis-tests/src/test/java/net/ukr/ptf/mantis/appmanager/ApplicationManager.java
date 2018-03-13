@@ -15,8 +15,9 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManager {
     private final Properties properties;
     private WebDriver wd;
+
     private String browser;
-    private RegistrationHelper registrationHelprer;
+    private RegistrationHelper registrationHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -43,10 +44,10 @@ public class ApplicationManager {
     }
 
     public RegistrationHelper registration() {
-        if(registrationHelprer == null) {
-            registrationHelprer = new RegistrationHelper(this);
+        if(registrationHelper == null) {
+            registrationHelper = new RegistrationHelper(this);
         }
-        return registrationHelprer;
+        return registrationHelper;
     }
 
     public WebDriver getDriver() {
