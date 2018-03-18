@@ -47,7 +47,6 @@ public class Issue {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(id, subject, description);
     }
 }
