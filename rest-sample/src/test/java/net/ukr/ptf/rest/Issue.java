@@ -30,7 +30,7 @@ public class Issue {
         return description;
     }
 
-    public Issue withDescriptioin(String description) {
+    public Issue withDescription(String description) {
         this.description = description;
         return this;
     }
