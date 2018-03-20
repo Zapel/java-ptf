@@ -23,3 +23,7 @@ dependencies {
     compile 'org.webpieces:webserver:1.9.92'
     compile 'org.mortbay.jetty:servlet-annotation-spec:3.0.pre0'
 }
+
+test {
+   useTestNG()
+}
